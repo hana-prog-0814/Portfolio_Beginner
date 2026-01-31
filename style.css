@@ -1,0 +1,377 @@
+/* Color Palette */
+:root {
+    --stormy-teal: #276f6c;
+    --sunflower-gold: #ebaf34;
+    --jet-black: #142c3a;
+    --white: #ffffff;
+    --porcelain: #f8f7f1;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--jet-black);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--porcelain);
+    padding: 1.5rem 2rem;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.875rem;
+    color: var(--jet-black);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Cantora One', sans-serif;
+}
+
+.nav-links a {
+    color: var(--jet-black);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 2rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title {
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 4.5rem;
+    color: var(--jet-black);
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-family: 'Cherry Cream Soda', serif;
+    font-size: 1.25rem;
+    color: var(--jet-black);
+    margin-top: 2rem;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.profile-circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--sunflower-gold);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: var(--jet-black);
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about {
+    background-color: var(--porcelain);
+    padding: 4rem 0;
+}
+
+.about-text {
+    font-family: 'Crimson Text','Cherry Cream Soda';
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--jet-black);
+    width: 100%;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 0;
+}
+
+.skills-grid-container {
+    background-color: var(--jet-black);
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon img {
+    width: 56px;
+    height: 56px;
+}
+
+.skill-item span {
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
+
+.skill-item .small-text {
+    font-size: 0.875rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 0;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #D9DFCF;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project-content.reverse {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project-image {
+    width: 128px;
+    height: 128px;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info a {
+    text-decoration: none;
+    color: var(--jet-black);
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+.project-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    color: var(--jet-black);
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    color: var(--jet-black);
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.email-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #eb4335;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.email-box {
+    flex: 1;
+    background-color: var(--sunflower-gold);
+    border: 3px solid var(--jet-black);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    color: var(--jet-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.email-box:hover {
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--jet-black);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .profile-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-content.reverse {
+        flex-direction: column;
+    }
+
+    .email-container {
+        flex-direction: column;
+    }
+
+    .email-box {
+        font-size: 1rem;
+    }
+}
